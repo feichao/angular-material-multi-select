@@ -1,0 +1,75 @@
+.wan-select {
+  display: inline-block;
+  position: relative;
+}
+
+.wan-select .ws-content {
+  background-color: white;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.084);
+  max-height: 400px;
+  min-width: 400px;
+  overflow: auto;
+  padding: 10px;
+  position: absolute;
+  transform: scaleY(0);
+  transform-origin: left top;
+  transition: all 0.2s ease;
+  width: 100%;
+  z-index: 102;
+}
+
+.wan-select .ws-content .ws-select-shortcut {
+  width: 100%;
+}
+
+.wan-select .ws-content .ws-select-shortcut .ws-select-button {
+  border: 1px solid #eee;
+  border-radius: 0;
+  box-shadow: none;
+  float: left;
+  height: 25px;
+  line-height: 1em;
+  margin: 0;
+  min-height: 25px;
+  padding: 0;
+  width: 33%;
+}
+
+.wan-select .ws-content hr {
+  border-bottom-style: dashed;
+  margin: 10px 0px;
+}
+
+.wan-select .ws-content .ws-clear {
+  clear: both;
+}
+
+.wan-select .ws-content .ws-search {
+  padding-bottom: 20px;
+}
+
+.wan-select .ws-content .ws-search .ws-clear-search {
+  line-height: 1em;
+  margin: 0;
+  min-height: 25px;
+  min-width: 40px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+
+.wan-select .ws-content .ws-search .ws-search-input {
+  padding-left: 8px;
+}
+
+.wan-select .ws-content .ws-none-select {
+  margin-left: 10px;
+}
+
+.wan-select .ws-content-show {
+  transform: scaleY(1);
+}
+
+.wan-select .ws-content-hide {
+  transform: scaleY(0);
+}
