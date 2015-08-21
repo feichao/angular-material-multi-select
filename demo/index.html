@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demoSelect">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>demo daterangerpicker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/dateranger-picker/src/daterangepicker.css">
+</head>
+
+<body>
+  <div class="wrapper" ng-controller="DemoCtrl">
+    <wan-select placeholder="版本：" source-data="=" selected-data="=" select-changed="&"></wan-select>
+  </div>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/dateranger-picker/src/daterangepicker.js"></script>
+  <script>
+  angular
+    .module('demoSelect', [
+      'ngMaterial',
+      'fc.wanSelect'
+    ]).controller('DemoCtrl', DemoCtrl);
+
+  function DemoCtrl($scope) {
+    $scope.sourceData = ["阿尔及利亚", "埃及", "利比亚", "摩洛哥", "苏丹", "突尼西亚", "贝宁", "布吉纳法索", "布基纳法索", "查德", "乍得", "科特迪瓦", "甘比亚", "冈比亚", "加纳", "几内亚", "几内亚比索", "赖比瑞亚", "利比里亚", "马里", "尼日", "尼日尔", "毛里塔尼亚", "奈及利亚", "尼日利亚", "塞内加尔", "狮子山", "塞拉利昂", "多哥", "维德角", "佛得角", "喀麦隆", "中非", "赤道几内亚", "加彭", "加蓬", "刚果共合国", "刚果民主共和国", "刚果民主共和国", "圣多美普林西比", "安哥拉", "波札那", "博茨瓦纳", "葛摩", "科摩罗", "赖索托", "莱索托", "马达加斯加", "马拉维", "模里西斯", "毛里求斯", "莫桑比克", "纳米比亚", "史瓦济兰", "斯威士兰", "南非", "坦尚尼亚", "赞比亚", "津巴布韦", "蒲隆地", "布隆迪", "吉布地", "吉布提", "厄利垂亚", "厄立特里亚", "伊索比亚", "埃塞俄比亚", "肯亚", "肯尼亚", "卢安达", "卢旺达", "塞席尔", "塞舌尔", "索马利亚", "索马里", "坦桑尼亚", "乌干达", "加纳利群岛(西班牙)", "休达及美利里亚(西班牙|争议区)", "马德拉(葡萄牙)", "马约特岛(法国)", "留尼旺", "留尼汪(法国)", "圣赫伦那", "圣赫勒拿(英国)", "西撒哈拉(摩洛哥|争议区)", "加拿大", "墨西哥", "美国", "贝里斯", "伯利兹", "哥斯达黎加", "萨尔瓦多", "危地马拉", "洪都拉斯", "尼加拉瓜", "巴拿马 |安地卡及巴布达", "安提瓜和巴布达", "巴哈马", "巴贝多", "巴巴多斯", "古巴", "多米尼克", "多米尼加联邦", "多米尼加", "多米尼加共和国", "格瑞纳达", "格林纳达", "海地", "牙买加", "圣克里斯多福及尼维斯", "圣基茨和尼维斯", "圣露西亚", "圣卢西亚", "圣文森及格瑞那丁", "圣文森特和格林纳丁斯", "千里达及托巴哥", "特立尼达和多巴哥", "阿根廷", "玻利维亚", "巴西", "智利", "哥伦比亚", "厄瓜多尔", "盖亚那", "圭亚那", "秘鲁", "巴拉圭", "苏利南", "苏里南", "乌拉圭", "委内瑞拉", "安圭拉(英国)", "阿鲁巴", "阿鲁巴(荷兰)", "英属维尔京群岛(英国)", "百幕达", "百慕大(英国)", "开曼群岛", "开曼群岛(英国)", "福克兰群岛", "马尔维纳群岛(英国)", "法属圭亚纳(法国)", "格陵兰(丹麦)", "瓜德洛普", "瓜德卢普(法国)", "扬马延岛(挪威)", "马提尼克(法国)", "蒙特塞拉特(英国)", "纳弗沙岛(美国)", "圣皮耶与密克隆群岛(法国)", "荷属安地列斯", "安的列斯(荷兰)", "波多黎各(美国)", "南乔治亚与南三明治群岛(英国)", "特克斯与凯科斯群岛(英国)", "维京群岛(美国)", "波怀特岛(挪威)", "法属南方与南极领地(法国)", "贺得及麦唐纳群岛(澳大利亚)", "彼得一世岛(挪威)", "中国", "日本", "蒙古", "北韩", "朝鲜", "韩国", "缅甸", "文莱", "柬埔寨", "东帝汶", "印度尼西亚", "寮国", "老挝", "马来西亚", "菲律宾", "新加坡", "泰国", "越南"];
+    $scope.selectedData = [];
+
+    $scope.selectChanged = function(){
+      console.log($scope.selectedData);
+    };
+  }
+  </script>
+</body>
+
+</html>
