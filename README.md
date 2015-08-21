@@ -12,16 +12,19 @@ angular material multiselect component
 > angular 1.3.15, angular material ~0.10.0 as bower.json says.
 
 **install**
-> `bower install dateranger-picker --save`
+> `bower install wan-select --save`
 
 **how to use**
 
 > in you index.html include wan-select.js and wan-select.css
+>
 > `app.module('your angular app name', 'fc.wanSelect')`
 
 **use like this**
 
-> `<wan-select placeholder="@" source-data="=" selected-data="=" select-changed="&"></wan-select>`
+``` html
+<wan-select placeholder="@" source-data="=" selected-data="=" select-changed="&"></wan-select>
+``` 
 
 **params**
 > placeholder: placeholder, string.
